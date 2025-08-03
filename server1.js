@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://heena:1234@cluster0.czrkxgx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect('add/link/to/mongodb')
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.log(err));
 
@@ -51,3 +51,4 @@ app.post('/register', async (req, res) => {
 // Start server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
